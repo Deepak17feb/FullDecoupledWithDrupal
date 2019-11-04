@@ -1,0 +1,136 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.container {
+  max-width: 1024px;
+  display: block;
+  margin: 0 auto;
+}
+
+header {
+  background: black;
+  width: 100%;
+  text-align: center
+}
+header .logo {
+  display: inline-block;
+  width: 100px;
+  vertical-align: middle;
+  animation: App-logo-spin infinite 20s linear;
+}
+header .logo a {
+  display: block;
+}
+header nav {
+  display: inline-block;
+  width: calc(100% - 100px);
+  text-align: right;
+  vertical-align: middle;
+}
+header nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+header nav li a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.listView ul li {
+  display: block;
+  margin: 20px 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.listView ul li a {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.listView ul li a:hover {
+  text-decoration: underline;
+}
+
+.listView ul li .title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.listView ul li .bodyText {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.singleview .goBack {
+  background: red;
+  font-weight: bold;
+  padding: 10px 10px;
+  color: white;
+  margin: 10px 0;
+  display: inline-block;
+  cursor: pointer;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.singleViewContainer li {
+  background: none;
+  border: 0;
+  padding: 0 10px;
+}
+
+.loader {
+  background:black;
+  position: fixed;
+  top:0;
+  bottom:0;
+  z-index: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+#getNid{
+  display: none;
+}
